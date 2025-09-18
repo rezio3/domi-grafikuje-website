@@ -1,0 +1,19 @@
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  background-color: #ceca9d;
+}
+.nav-buttons-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+}

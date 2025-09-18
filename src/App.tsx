@@ -3,16 +3,17 @@ import "./App.scss";
 // import Home from "./pages/Home";
 import UpperBadge from "./components/UpperBadge";
 import LogoHeader from "./components/LogoHeader";
+import NavBar from "./components/Navigation/NavBar";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <div></div>
-      <UpperBadge />
-      <LogoHeader />
       <div className="page-wrapper">
-        <h1>Elo</h1>
-        <div style={{ padding: "20px", fontFamily: "Arial" }}></div>
+        <UpperBadge />
+        <LogoHeader />
+        <NavBar />
+        <Home />
       </div>
     </div>
   );
