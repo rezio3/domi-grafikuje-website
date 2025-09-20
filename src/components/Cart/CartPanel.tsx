@@ -18,6 +18,10 @@ const CartPanel = () => {
       </div>
       <div className="products-container">
         <div className="product-box">Jakiś produkt</div>
+        <div className="product-box">Jakiś produkt</div>
+        {/* <div className="product-box">Jakiś produkt</div>
+        <div className="product-box">Jakiś produkt</div>
+        <div className="product-box">Jakiś produkt</div> */}
       </div>
       <CartFooterSums />
     </div>
