@@ -3,7 +3,7 @@ import "./TextItem.scss";
 type FontWeights = 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
 type FontNames = "Outfit" | "Fraunces";
 
-type TextItemProps = {
+export type TextItemProps = {
   children: React.ReactNode;
   fontSize?: number;
   fontWeight?: FontWeights;

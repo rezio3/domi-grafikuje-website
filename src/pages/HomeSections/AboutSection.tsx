@@ -1,6 +1,6 @@
 import SectionWrapper from "../../assets/SectionWrapper";
 import ImageItem from "../../components/elements/ImageItem";
-import PinkButton from "../../components/elements/PinkButton";
+import Button from "../../components/elements/Button";
 import TextItem from "../../components/elements/TextItem";
 import aboutImage from "../../img/aboutImg.png";
 
@@ -24,7 +24,14 @@ const AboutSection = () => {
         </div>
         <div></div>
         <div>
-          <PinkButton>Sprawdź plakaty</PinkButton>
+          <Button
+            className="pink-button"
+            fontWeight={500}
+            fontSize={14}
+            padding="9px 20px"
+          >
+            Sprawdź plakaty
+          </Button>
         </div>
       </div>
       <div className="about-image-container">

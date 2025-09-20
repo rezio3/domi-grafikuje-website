@@ -1,0 +1,70 @@
+@use "../../styles/colors" as c;
+.cart-panel {
+  top: 0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 495px;
+  height: 100%;
+  background-color: c.$bg;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
+  .cart-header-container {
+    position: relative;
+    padding-left: 10px;
+    height: 95px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: c.$beige;
+    .close-button {
+      flex: 0.03 0 auto; /* zostaje po lewej */
+    }
+    .cart-header {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .products-container {
+    flex: 1 1 auto;
+    overflow-y: auto;
+
+    .product-box {
+      height: 200px;
+      background-color: aqua;
+    }
+  }
+  .cart-footer-container {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: c.$beige;
+    flex: 0 0 auto;
+
+    .sum-and-btn-boxes {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      height: 100%;
+
+      .sum-box {
+        display: flex;
+        justify-content: space-between;
+      }
+      .checkout-button {
+        margin-top: auto;
+      }
+    }
+  }
+}
+
+.cart-panel--open {
+  transform: translateX(0);
+}

@@ -6,18 +6,23 @@ import LogoHeader from "./components/LogoHeader";
 import NavBar from "./components/Navigation/NavBar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import CartPanel from "./components/Cart/CartPanel";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
-    <div className="App">
-      <div className="page-wrapper">
-        <UpperBadge />
-        <LogoHeader />
-        <NavBar />
-        <Home />
-        <Footer />
+    <CartProvider>
+      <div className="App">
+        <div className="page-wrapper">
+          <UpperBadge />
+          <LogoHeader />
+          <NavBar />
+          <Home />
+          <Footer />
+          <CartPanel />
+        </div>
       </div>
-    </div>
+    </CartProvider>
   );
 }
 
