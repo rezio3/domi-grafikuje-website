@@ -2,7 +2,7 @@ import SectionWrapper from "../assets/SectionWrapper";
 import Logo from "../img/logo.svg";
 import SearchIcon from "../img/search.svg";
 import CartIcon from "../img/shopping_cart.svg";
-import "./HeaderWrapper.scss";
+import "./LogoHeader.scss";
 
 const LogoHeader = () => {
   const cartHandler = () => {

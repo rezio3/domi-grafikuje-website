@@ -1,6 +1,7 @@
 import "./TextItem.scss";
 
 type FontWeights = 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
+type FontNames = "Outfit" | "Fraunces";
 
 type TextItemProps = {
   children: React.ReactNode;
@@ -8,6 +9,9 @@ type TextItemProps = {
   fontWeight?: FontWeights;
   letterSpacing?: number;
   isLowercase?: boolean;
+  lineHeight?: number;
+  fontName?: FontNames;
+  className?: string;
 };
 
 const TextItem: React.FC<TextItemProps> = ({
@@ -16,15 +20,20 @@ const TextItem: React.FC<TextItemProps> = ({
   fontWeight,
   letterSpacing,
   isLowercase,
+  lineHeight,
+  fontName,
+  className,
 }: TextItemProps) => {
   return (
     <span
-      className="text-item-span"
+      className={`text-item-span ${className || ""}`}
       style={{
         fontSize: fontSize || 22,
         fontWeight: fontWeight || 400,
         letterSpacing: letterSpacing || 0,
         textTransform: isLowercase ? "none" : "uppercase",
+        lineHeight: lineHeight || 1.4,
+        fontFamily: fontName || "Outfit",
       }}
     >
       {children}

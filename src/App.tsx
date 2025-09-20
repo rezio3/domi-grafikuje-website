@@ -5,6 +5,7 @@ import UpperBadge from "./components/UpperBadge";
 import LogoHeader from "./components/LogoHeader";
 import NavBar from "./components/Navigation/NavBar";
 import Home from "./pages/Home";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <LogoHeader />
         <NavBar />
         <Home />
+        <Footer />
       </div>
     </div>
   );
