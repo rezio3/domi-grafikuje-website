@@ -1,11 +1,11 @@
-@import "../styles/colors";
+@use "../styles/colors" as c;
 .footer-overlay {
   width: 100%;
   height: 238px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $beige;
+  background-color: c.$beige;
 
   .footer-container {
     width: 100%;
@@ -15,8 +15,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      //   .social-icons-container {
-      //   }
     }
     .social-icons-container {
       .social-icon {
@@ -25,8 +23,6 @@
       }
     }
     .footer-links {
-      //   width: 25%;
-      //   height: 30px;
       display: flex;
       flex-direction: column;
       .single-footer-link {
