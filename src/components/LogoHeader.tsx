@@ -5,9 +5,9 @@ import CartIcon from "../img/shopping_cart.svg";
 import "./LogoHeader.scss";
 
 const LogoHeader = () => {
-  const cartHandler = () => {
-    console.log("cart clicked");
-  };
+  // const cartHandler = () => {
+  //   console.log("cart clicked");
+  // };
   return (
     <SectionWrapper>
       <header className="header-wrapper">
