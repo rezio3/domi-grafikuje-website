@@ -11,6 +11,7 @@ export type TextItemProps = {
   isLowercase?: boolean;
   lineHeight?: number;
   fontName?: FontNames;
+  opacity?: number;
   className?: string;
 };
 
@@ -22,6 +23,7 @@ const TextItem: React.FC<TextItemProps> = ({
   isLowercase,
   lineHeight,
   fontName,
+  opacity,
   className,
 }: TextItemProps) => {
   return (
@@ -34,6 +36,7 @@ const TextItem: React.FC<TextItemProps> = ({
         textTransform: isLowercase ? "none" : "uppercase",
         lineHeight: lineHeight || 1.4,
         fontFamily: fontName || "Outfit",
+        opacity: opacity || 1,
       }}
     >
       {children}

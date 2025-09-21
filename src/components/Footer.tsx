@@ -5,6 +5,7 @@ import instaIcon from "../img/instagram.png";
 import ImageItem from "./elements/ImageItem";
 import SectionWrapper from "../assets/SectionWrapper";
 import TextItem from "./elements/TextItem";
+import footerBandle from "../img/footerBandle.svg";
 
 const Footer = () => {
   const linksColumn1 = [
@@ -33,6 +34,8 @@ const Footer = () => {
           key={item.label + index}
           fontSize={14}
           fontWeight={item.header ? 500 : 400}
+          isLowercase
+          opacity={item.header ? 1 : 0.7}
           className="single-footer-link"
         >
           {item.label}
@@ -63,6 +66,18 @@ const Footer = () => {
           </div>
         </div>
       </SectionWrapper>
+      <div className="footer-bundle-box">
+        <ImageItem src={footerBandle} />
+        <ImageItem src={footerBandle} />
+      </div>
+      <TextItem
+        fontWeight={400}
+        fontSize={12}
+        isLowercase
+        className="copyright-span"
+      >
+        &#169; 2025 Domigrafikuje
+      </TextItem>
     </div>
   );
 };
