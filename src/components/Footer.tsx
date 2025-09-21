@@ -66,10 +66,16 @@ const Footer = () => {
           </div>
         </div>
       </SectionWrapper>
-      <div className="footer-bundle-box">
-        <ImageItem src={footerBandle} />
-        <ImageItem src={footerBandle} />
-      </div>
+      <div
+        className="footer-bundle-box"
+        style={{
+          width: "100%",
+          height: "30px",
+          backgroundImage: `url(${footerBandle})`,
+          backgroundRepeat: "repeat-x",
+          backgroundSize: "auto 100%",
+        }}
+      ></div>
       <TextItem
         fontWeight={400}
         fontSize={12}
