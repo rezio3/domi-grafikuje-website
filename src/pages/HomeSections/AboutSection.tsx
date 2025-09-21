@@ -3,11 +3,13 @@ import ImageItem from "../../components/elements/ImageItem";
 import Button from "../../components/elements/Button";
 import TextItem from "../../components/elements/TextItem";
 import aboutImage from "../../img/aboutImg.png";
+import dgNaklejka from "../../img/dgnaklejka.svg";
 
 const AboutSection = () => {
   return (
     <SectionWrapper>
       <div className="about-text-container">
+        <ImageItem src={dgNaklejka} className="dgnaklejka-image" />
         <TextItem fontSize={30} fontName="Fraunces" isLowercase>
           Hejka, tu Domi!
         </TextItem>

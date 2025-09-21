@@ -38,11 +38,17 @@
   height: 674px;
   overflow: hidden;
   .about-text-container {
+    position: relative;
     padding: 150px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
+    .dgnaklejka-image {
+      position: absolute;
+      right: -40px;
+      top: 20px;
+    }
     .about-text-span-container {
       width: 400px;
     }

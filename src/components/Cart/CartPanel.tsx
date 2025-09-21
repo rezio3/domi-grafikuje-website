@@ -5,6 +5,7 @@ import "./CartPanel.scss";
 import closeButtonIcon from "../../img/close.svg";
 import cartHeader from "../../img/koszyk.svg";
 import { CartFooterSums } from "./CartFooterSums";
+import { products } from "../../products/products";
 const CartPanel = () => {
   const { isCartOn, toggleCart } = useCart();
 
@@ -17,11 +18,11 @@ const CartPanel = () => {
         <ImageItem src={cartHeader} alt="cart header" className="cart-header" />
       </div>
       <div className="products-container">
-        <div className="product-box">Jakiś produkt</div>
-        <div className="product-box">Jakiś produkt</div>
-        {/* <div className="product-box">Jakiś produkt</div>
-        <div className="product-box">Jakiś produkt</div>
-        <div className="product-box">Jakiś produkt</div> */}
+        {products.map((product) => (
+          <div className="product-box">
+            {product.name}, Cena: {product.price} Id: {product.id}
+          </div>
+        ))}
       </div>
       <CartFooterSums />
     </div>
