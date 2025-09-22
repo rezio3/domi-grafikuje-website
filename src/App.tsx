@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import CartPanel from "./components/Cart/CartPanel";
 import { CartProvider } from "./context/CartContext";
 import Plakaty from "./pages/Plakaty";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, HashRouter as Router, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
             <LogoHeader />
             <NavBar />
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/*" element={<Home />} />
               <Route path="/plakaty" element={<Plakaty />} />
             </Routes>
 
