@@ -8,20 +8,29 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import CartPanel from "./components/Cart/CartPanel";
 import { CartProvider } from "./context/CartContext";
+import Plakaty from "./pages/Plakaty";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 function App() {
   return (
     <CartProvider>
-      <div className="App">
-        <div className="page-wrapper">
-          <UpperBadge />
-          <LogoHeader />
-          <NavBar />
-          <Home />
-          <Footer />
-          <CartPanel />
+      <Router>
+        <div className="App">
+          <div className="page-wrapper">
+            <UpperBadge />
+            <LogoHeader />
+            <NavBar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/plakaty" element={<Plakaty />} />
+            </Routes>
+
+            {/* <Plakaty /> */}
+            <Footer />
+            <CartPanel />
+          </div>
         </div>
-      </div>
+      </Router>
     </CartProvider>
   );
 }

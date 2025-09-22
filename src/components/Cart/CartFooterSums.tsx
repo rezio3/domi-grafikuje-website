@@ -40,6 +40,8 @@ export const CartFooterSums = () => {
           fontWeight={700}
           padding={"9px 20px"}
           onClick={handleCheckout}
+          icon="arrow"
+          iconSize="Medium"
         >
           Przejdź do kasy
         </Button>

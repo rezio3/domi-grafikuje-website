@@ -31,6 +31,7 @@ const AboutSection = () => {
             fontWeight={500}
             fontSize={14}
             padding="9px 20px"
+            icon="arrow"
           >
             Sprawdź plakaty
           </Button>
